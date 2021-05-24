@@ -1,0 +1,41 @@
+{
+    "name": "rrbrr/muser",
+    "keywords": ["thinkphp"],
+    "description": "user login,uesr register ",
+    "authors": [
+        {
+            "name": "caoygx",
+            "email": "caoygx@qq.com"
+        }
+    ],
+    "license": "Apache-2.0",
+    "require": {
+    	"topthink/framework": "6.0.x",
+        "topthink/think-migration": "^3.0"
+    },
+    "require-dev": {
+        "topthink/think": "6.0.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "muser\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "user\\tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "muser\\UserService"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
